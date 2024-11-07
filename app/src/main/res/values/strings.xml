@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Solar power station</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="checkout">CheckOut</string>
+    <string name="product">Product</string>
+    <string name="product_image">product_image</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description_goes_here">Product Description goes here.</string>
+    <string name="_0_00">$0.00</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="buying_now">Buy Now</string>
+    <string name="name">Name</string>
+    <string name="confirm_purchase">Confirm Purchase</string>
+    <string name="cvv">CVV</string>
+    <string name="expiration_date_mm_yy">Expiration Date (MM/YY)</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+</resources>

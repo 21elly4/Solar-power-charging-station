@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/productFragment">
+
+    <!-- Product Fragment -->
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.solarpowerstation.ProductFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_product">
+        <!-- Action to go to Details Fragment -->
+        <action
+            android:id="@+id/actionProductFragmentToDetailFragment"
+            app:destination="@id/detailsFragment" />
+
+    </fragment>
+
+    <!-- Details Fragment -->
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.solarpowerstation.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+        <!-- Action to go to Checkout Fragment -->
+        <argument
+            android:name="productId"
+            app:argType="String" />
+        <action
+            android:id="@+id/action_detailsFragment_to_CheckoutFragment"
+            app:destination="@id/checkoutFragment" />
+    </fragment>
+
+    <!-- Checkout Fragment -->
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="com.example.solarpowerstation.CheckoutFragment"
+        android:label="Checkout"
+        tools:layout="@layout/fragment_checkout" />
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "801915471241",
+    "project_id": "solar-power-station-ef289",
+    "storage_bucket": "solar-power-station-ef289.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801915471241:android:0e72f0e7435a8347ed4d58",
+        "android_client_info": {
+          "package_name": "com.example.solarpowerstation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD196YcPDuIRY6bM0_ZINza98E15xceMSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
