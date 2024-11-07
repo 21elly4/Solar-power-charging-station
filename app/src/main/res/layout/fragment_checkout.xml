@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".CheckoutFragment">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -14,61 +16,103 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- User Name Input -->
             <EditText
                 android:id="@+id/nameInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- Email Input -->
             <EditText
                 android:id="@+id/emailInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:layout_marginTop="8dp" />
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- Address Input -->
             <EditText
                 android:id="@+id/addressInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
                 android:inputType="textPostalAddress"
-                android:layout_marginTop="8dp" />
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- Credit Card Input -->
             <EditText
                 android:id="@+id/creditCardInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/credit_card_number"
                 android:inputType="number"
-                android:layout_marginTop="8dp" />
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- Expiration Date Input -->
             <EditText
                 android:id="@+id/expirationInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/expiration_date_mm_yy"
                 android:inputType="text"
-                android:layout_marginTop="8dp" />
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
 
+            <!-- CVV Input -->
             <EditText
                 android:id="@+id/cvvInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/cvv"
                 android:inputType="numberPassword"
-                android:layout_marginTop="8dp" />
+                android:padding="12dp"
+                android:backgroundTint="@color/nav_item_inactive"
+                android:textColor="@color/black"
+                android:hintTextColor="@color/nav_item_inactive"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
 
+            <!-- Confirm Purchase Button -->
             <Button
                 android:id="@+id/confirmButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/confirm_purchase"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_500"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:paddingVertical="12dp"
+                android:elevation="4dp"
                 android:layout_marginTop="16dp" />
         </LinearLayout>
     </ScrollView>
-
-
 </FrameLayout>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".DetailsFragment">
 
     <ScrollView
@@ -16,14 +17,22 @@
             android:orientation="vertical"
             android:paddingBottom="16dp">
 
-            <!-- Product Image -->
-            <ImageView
-                android:id="@+id/detailProductImage"
+            <!-- Product Image with Card Background -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/placeholder"
-                android:contentDescription="@string/product_image" />
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:cardElevation="4dp"
+                android:cardCornerRadius="12dp">
+
+                <ImageView
+                    android:id="@+id/detailProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder"
+                    android:contentDescription="@string/product_image" />
+            </androidx.cardview.widget.CardView>
 
             <!-- Product Name -->
             <TextView
@@ -31,37 +40,54 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/product_name"
-                android:textSize="20sp"
+                android:textSize="22sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
-                android:layout_marginTop="16dp" />
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp" />
 
             <!-- Product Description -->
             <TextView
                 android:id="@+id/productDescription"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/product_description_goes_here"
                 android:textSize="16sp"
-                android:layout_marginTop="8dp" />
+                android:textColor="@color/nav_item_inactive"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp" />
 
-            <!-- Product Price -->
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/nav_item_inactive"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Product Price with Styling -->
             <TextView
                 android:id="@+id/productPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_0_00"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textColor="@color/teal_700"
-                android:layout_marginTop="8dp" />
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
 
-            <!-- Buy Now Button -->
+            <!-- Buy Now Button with Styling -->
             <Button
                 android:id="@+id/buyNowButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/buy_now"
-                android:layout_marginTop="16dp"
-                android:contentDescription="@string/buying_now" />
+                android:textColor="@color/white"
+                android:backgroundTint="@color/purple_500"
+                android:textStyle="bold"
+                android:paddingVertical="10dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/buying_now"
+                android:fontFamily="sans-serif-medium" />
         </LinearLayout>
     </ScrollView>
 </FrameLayout>
