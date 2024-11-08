@@ -14,7 +14,6 @@ class CheckoutFragment : Fragment(R.layout.fragment_checkout) {
         _binding = FragmentCheckoutBinding.bind(view)
 
         binding.confirmButton.setOnClickListener {
-            // Handle checkout confirmation
         }
     }
 
