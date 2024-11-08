@@ -21,7 +21,7 @@ class SplashActivity : AppCompatActivity() {
         // Delay for 2 seconds, then navigate to MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
-            finish()  // Close SplashActivity so it’s not accessible when back is pressed
+            finish()  
         }, 2000)
     }
 }
