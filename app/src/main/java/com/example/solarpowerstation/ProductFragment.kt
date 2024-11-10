@@ -36,7 +36,6 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                // Handle Firebase error
             }
         })
     }
