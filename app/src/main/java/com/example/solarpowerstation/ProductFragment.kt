@@ -11,7 +11,8 @@ import com.google.firebase.database.*
 class ProductFragment : Fragment(R.layout.fragment_product) {
     private lateinit var binding: FragmentProductBinding
     private lateinit var productAdapter: ProductAdapter
-    private val database: DatabaseReference = FirebaseDatabase.getInstance().getReference("products")
+    private val database: DatabaseReference =
+        FirebaseDatabase.getInstance().getReference("products")
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -35,6 +36,7 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
             }
 
             override fun onCancelled(error: DatabaseError) {
+                // Handle Firebase error
             }
         })
     }

@@ -23,11 +23,11 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                 val product = it.getValue(Product::class.java)
                 product?.let {
                     binding.productName.text = it.name
-                    binding.productDescription.text = it.description
-                    binding.productPrice.text = it.price.toString()
+                    binding.productDescription.text = it.description ?: "No description available"
+                    binding.productPrice.text = it.price?.toString() ?: "Price unavailable"
                 }
             }.addOnFailureListener {
-                Toast.makeText(requireContext(), "Failed to navigate to product details.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Failed to fetch product details.", Toast.LENGTH_SHORT).show()
             }
         } else {
             Toast.makeText(requireContext(), "Error: Product ID is missing.", Toast.LENGTH_SHORT).show()

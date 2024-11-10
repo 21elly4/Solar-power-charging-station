@@ -6,11 +6,13 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.google.gms.google.services)
     alias(libs.plugins.androidx.navigation.safeargs.kotlin)
+    id ("kotlin-kapt")
 }
 
 android {
     namespace = "com.example.solarpowerstation"
-    compileSdk = 34
+    compileSdk = 35
+
 
     viewBinding {
         enable = true
@@ -20,11 +22,10 @@ android {
         enable = true
     }
 
-
     defaultConfig {
         applicationId = "com.example.solarpowerstation"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -66,6 +67,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,6 +76,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation (libs.androidx.navigation.fragment.ktx)
-    implementation (libs.androidx.navigation.ui.ktx)
+    implementation(libs.glide)
+    kapt(libs.glide.compiler)
 }

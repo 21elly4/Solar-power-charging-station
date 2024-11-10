@@ -18,4 +18,5 @@
     <string name="credit_card_number">Credit Card Number</string>
     <string name="address">Address</string>
     <string name="email">Email</string>
+    <string name="formatted_price">Price: $%.2f</string>
 </resources>

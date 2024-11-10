@@ -14,14 +14,16 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Inflate the layout and set the content view
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Delay for 2 seconds, then navigate to MainActivity
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
+<<<<<<< HEAD
             finish()  
+=======
+            finish()
+>>>>>>> f66c9a9 (third commit)
         }, 2000)
     }
 }

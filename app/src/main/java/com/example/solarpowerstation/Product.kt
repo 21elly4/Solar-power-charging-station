@@ -1,9 +1,9 @@
 package com.example.solarpowerstation
 
 data class Product(
-    val name: String = "",
-    val description: String = "",
-    val price: Double = 0.0,
-    val imageUrl: String,
-    val id: String = ""
-   )
+    val id: String? = null,
+    val name: String? = null,
+    val price: Double? = null,
+    val imageUrl: String? = null,
+    val description: String? = null
+)

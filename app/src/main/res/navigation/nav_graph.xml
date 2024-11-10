@@ -14,7 +14,6 @@
         <action
             android:id="@+id/actionProductFragmentToDetailFragment"
             app:destination="@id/detailsFragment" />
-
     </fragment>
 
     <!-- Details Fragment -->
@@ -23,10 +22,10 @@
         android:name="com.example.solarpowerstation.DetailsFragment"
         android:label="Details"
         tools:layout="@layout/fragment_details">
-        <!-- Action to go to Checkout Fragment -->
+        <!-- Argument to pass productId -->
         <argument
             android:name="productId"
-            app:argType="String" />
+            app:argType="string" />
         <action
             android:id="@+id/action_detailsFragment_to_CheckoutFragment"
             app:destination="@id/checkoutFragment" />
