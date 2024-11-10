@@ -19,7 +19,7 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
         binding = FragmentProductBinding.bind(view)
 
         productAdapter = ProductAdapter { productId ->
-            val action = ProductFragmentDirections.actionProductFragmentToDetailFragment(productId)
+            val action = ProductFragmentDirections.actionProductFragmentToDetailsFragment(productId)
             findNavController().navigate(action)
         }
 

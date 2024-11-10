@@ -2,7 +2,7 @@
     <string name="app_name">Solar power station</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">Home</string>
+    <string name="home">Details</string>
     <string name="checkout">CheckOut</string>
     <string name="product">Product</string>
     <string name="product_image">product_image</string>
@@ -19,4 +19,5 @@
     <string name="address">Address</string>
     <string name="email">Email</string>
     <string name="formatted_price">Price: $%.2f</string>
+    <string name="imageload">TODO</string>
 </resources>

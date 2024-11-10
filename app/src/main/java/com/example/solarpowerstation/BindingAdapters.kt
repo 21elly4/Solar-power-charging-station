@@ -9,7 +9,7 @@ import com.bumptech.glide.request.RequestOptions
 object BindingAdapters {
 
     @JvmStatic
-    @androidx.databinding.BindingAdapter("imageUrl")
+    @BindingAdapter("imageUrl")
     fun loadImage(view: ImageView, url: String?) {
         val options = RequestOptions()
             .placeholder(R.drawable.placeholder)

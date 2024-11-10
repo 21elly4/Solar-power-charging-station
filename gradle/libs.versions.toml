@@ -1,5 +1,8 @@
 [versions]
 agp = "8.7.2"
+glide = "4.15.1"
+compiler = "4.15.1"
+databindingRuntime = "8.7.2"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -21,10 +24,14 @@ navigationUiKtx = "2.8.3"
 supportAnnotations = "28.0.0"
 cardview = "1.0.0"
 
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-databinding-runtime = { module = "androidx.databinding:databinding-runtime", version.ref = "databindingRuntime" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+compiler-v4151 = { module = "com.github.bumptech.glide:ksp", version.ref = "compiler" }
+glide-v4151 = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -47,8 +54,6 @@ moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", ver
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiKotlin" }
 support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
 androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
-glide = { module = "com.github.bumptech.glide:glide", version = "4.12.0" }
-glide-compiler = { module = "com.github.bumptech.glide:compiler", version = "4.12.0" }
 ksp = { module = "com.google.devtools.ksp:symbol-processing-api", version = "2.0.21-1.0.27" }
 
 
@@ -59,6 +64,7 @@ kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "ko
 google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version = "2.8.3" }
 ksp = { id = "com.google.devtools.ksp", version = "2.0.21-1.0.27" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 
 
 

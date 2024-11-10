@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/productFragment"
+        android:icon="@drawable/baseline_shopping_cart_checkout_24"
+        android:title="@string/product" />
+    <item
         android:id="@+id/detailsFragment"
         android:icon="@drawable/baseline_details_24"
         android:title="@string/home" />
+
     <item
         android:id="@+id/checkoutFragment"
         android:icon="@drawable/baseline_shopping_cart_checkout_24"
         android:title="@string/checkout" />
-    <item
-        android:id="@+id/productFragment"
-        android:icon="@drawable/baseline_shopping_cart_checkout_24"
-        android:title="@string/product" />
 </menu>

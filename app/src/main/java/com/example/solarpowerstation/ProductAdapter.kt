@@ -22,6 +22,7 @@ class ProductAdapter(private val onProductClick: (String) -> Unit) : ListAdapter
     inner class ProductViewHolder(private val binding: ItemProductBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(product: Product) {
             binding.product = product
+            binding.executePendingBindings()
             binding.root.setOnClickListener {
                 product.id?.let { id ->
                     onProductClick(id)
@@ -29,6 +30,7 @@ class ProductAdapter(private val onProductClick: (String) -> Unit) : ListAdapter
             }
         }
     }
+
 
     class ProductDiffCallback : DiffUtil.ItemCallback<Product>() {
         override fun areItemsTheSame(oldItem: Product, newItem: Product): Boolean {

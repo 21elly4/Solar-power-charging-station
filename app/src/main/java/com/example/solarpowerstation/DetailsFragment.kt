@@ -19,8 +19,8 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         val productId = arguments?.getString("productId")
         if (productId != null) {
             val database = FirebaseDatabase.getInstance().getReference("products").child(productId)
-            database.get().addOnSuccessListener {
-                val product = it.getValue(Product::class.java)
+            database.get().addOnSuccessListener { snapshot ->
+                val product = snapshot.getValue(Product::class.java)
                 product?.let {
                     binding.productName.text = it.name
                     binding.productDescription.text = it.description ?: "No description available"
@@ -34,7 +34,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
         }
 
         binding.buyNowButton.setOnClickListener {
-            findNavController().navigate(R.id.action_detailsFragment_to_CheckoutFragment)
+            findNavController().navigate(R.id.action_DetailsFragment_to_CheckoutFragment)
         }
     }
 
